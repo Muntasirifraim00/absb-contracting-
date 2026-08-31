@@ -61,9 +61,22 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme {
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-green: var(--brand-green);
+  --color-brand-blue: var(--brand-blue);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+}
+
 :root {
   --radius: 0.625rem;
+  --brand-green: oklch(0.68 0.19 148);
+  --brand-blue: oklch(0.45 0.22 265);
+  --navy: oklch(0.24 0.07 262);
+  --navy-deep: oklch(0.19 0.06 262);
   --background: oklch(1 0 0);
+
   --foreground: oklch(0.129 0.042 264.695);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
