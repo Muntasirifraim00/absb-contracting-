@@ -48,7 +48,7 @@ export function Precision() {
 
         <div className="mt-1 divide-y divide-white/15 lg:mt-4 lg:grid lg:grid-cols-3 lg:gap-6 lg:divide-y-0">
           {ITEMS.map(({ icon: Icon, title, sub, note }) => (
-            <div key={title} className="flex items-start gap-3.5 py-4 lg:flex-col lg:gap-4 lg:rounded-2xl lg:border lg:border-white/12 lg:bg-navy/50 lg:p-6">
+            <div key={title} className="flex items-start gap-3.5 py-3 lg:flex-col lg:gap-4 lg:rounded-2xl lg:border lg:border-white/12 lg:bg-navy/50 lg:p-6">
               <span className="grid h-[68px] w-[68px] shrink-0 place-items-center rounded-full bg-brand-blue/15 lg:h-20 lg:w-20">
                 <Icon className="h-8 w-8 text-brand-green lg:h-10 lg:w-10" strokeWidth={1.8} />
               </span>
@@ -95,7 +95,7 @@ export function Precision() {
             <img
               src={blueprint.url}
               alt="Blueprint wireframe of a G+1 villa"
-              className="w-full opacity-90 mix-blend-screen"
+              className="mx-auto max-h-[190px] w-full object-contain opacity-90 mix-blend-screen lg:max-h-none"
               style={{ filter: "invert(1) hue-rotate(180deg)" }}
             />
           </div>

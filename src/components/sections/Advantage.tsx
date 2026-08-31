@@ -82,7 +82,7 @@ export function Advantage() {
 
           <div className="mt-2 divide-y divide-white/12 lg:mt-4 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:divide-y-0">
             {STRENGTH.map(({ icon: Icon, title, note }) => (
-              <div key={title} className="flex items-center gap-3 py-3 lg:gap-5 lg:py-4">
+              <div key={title} className="flex items-center gap-3 py-2.5 lg:gap-5 lg:py-4">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-brand-blue/20 lg:h-16 lg:w-16">
                   <Icon className="h-5 w-5 text-brand-green lg:h-8 lg:w-8" strokeWidth={1.8} />
                 </span>

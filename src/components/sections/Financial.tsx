@@ -61,11 +61,11 @@ export function Financial() {
           We combine financial certainty with operational efficiency to deliver unmatched value and peace of mind.
         </p>
 
-        <div className="mt-3 space-y-2.5 lg:mt-7 lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
+        <div className="mt-3 space-y-2 lg:mt-7 lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
           {ITEMS.map(({ icon: Icon, title, sub, note }) => (
             <div
               key={title}
-              className="flex items-start gap-3.5 rounded-2xl border border-brand-blue/25 bg-navy/40 px-3 py-3.5 lg:gap-5 lg:px-6 lg:py-6"
+              className="flex items-start gap-3.5 rounded-2xl border border-brand-blue/25 bg-navy/40 px-3 py-3 lg:gap-5 lg:px-6 lg:py-6"
             >
               <span className="grid h-[62px] w-[62px] shrink-0 place-items-center rounded-full bg-brand-blue/15 lg:h-[76px] lg:w-[76px]">
                 <Icon className="h-7 w-7 text-brand-green lg:h-9 lg:w-9" strokeWidth={1.8} />
