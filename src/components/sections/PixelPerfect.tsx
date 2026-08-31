@@ -68,42 +68,38 @@ export function PixelPerfect() {
 
         {/* Pillars */}
         <div className="mt-3 space-y-2 lg:mt-8 lg:grid lg:grid-cols-2 lg:gap-6 lg:space-y-0">
-          {ITEMS.map((pillar, i) => (
-            <PillarCard
-              key={pillar.title}
-              pillar={pillar}
-              className={i === ITEMS.length - 1 ? "lg:col-span-2" : undefined}
-            />
+          {ITEMS.map((pillar) => (
+            <PillarCard key={pillar.title} pillar={pillar} />
           ))}
-        </div>
 
-        {/* Closing statement */}
-        <div className="mt-2 overflow-hidden rounded-2xl border border-white/12 bg-navy/40 lg:mt-6">
-          <div className="grid grid-cols-[1.08fr_1fr] items-center gap-2.5 p-2.5 lg:grid-cols-2 lg:gap-8 lg:p-6">
-            <div>
-              <p className="text-[0.82rem] font-extrabold uppercase leading-tight text-white lg:text-[1.9rem]">
-                Good is common.
-                <br />
-                <span className="text-brand-green">Excellence is our standard.</span>
-              </p>
-              <span className="mt-2 block h-px w-24 bg-brand-green/60 lg:mt-4 lg:w-36" />
-              <div className="mt-2 flex items-center gap-2 lg:mt-4 lg:gap-4">
-                <Crosshair
-                  className="h-5 w-5 shrink-0 text-brand-green lg:h-9 lg:w-9"
-                  strokeWidth={1.8}
-                />
-                <p className="text-[0.78rem] font-extrabold uppercase leading-tight text-white lg:text-[1.15rem]">
-                  Pixel Perfect.
+          {/* Closing statement, sharing the pillar grid */}
+          <div className="overflow-hidden rounded-2xl border border-white/12 bg-navy/40">
+            <div className="grid grid-cols-[1.08fr_1fr] items-center gap-2.5 p-2.5 lg:gap-5 lg:p-4">
+              <div>
+                <p className="text-[0.82rem] font-extrabold uppercase leading-tight text-white lg:text-[1.35rem]">
+                  Good is common.
                   <br />
-                  Visibly Better.
+                  <span className="text-brand-green">Excellence is our standard.</span>
                 </p>
+                <span className="mt-2 block h-px w-24 bg-brand-green/60 lg:mt-3 lg:w-28" />
+                <div className="mt-2 flex items-center gap-2 lg:mt-3 lg:gap-3">
+                  <Crosshair
+                    className="h-5 w-5 shrink-0 text-brand-green lg:h-7 lg:w-7"
+                    strokeWidth={1.8}
+                  />
+                  <p className="text-[0.78rem] font-extrabold uppercase leading-tight text-white lg:text-[1rem]">
+                    Pixel Perfect.
+                    <br />
+                    Visibly Better.
+                  </p>
+                </div>
               </div>
+              <CardMedia
+                image={placeholderImage}
+                alt="Blueprint wireframe of the villa"
+                className="h-[190px] w-full lg:h-[200px]"
+              />
             </div>
-            <CardMedia
-              image={placeholderImage}
-              alt="Blueprint wireframe of the villa"
-              className="h-[190px] w-full lg:h-[320px]"
-            />
           </div>
         </div>
 
