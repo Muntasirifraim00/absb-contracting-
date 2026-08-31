@@ -128,7 +128,7 @@ function Hero() {
             every critical stage.
           </p>
 
-          <div className="mt-5 flex items-center gap-2.5 lg:mt-9 lg:gap-4">
+          <div className="mt-5 flex items-center justify-center gap-2.5 lg:mt-9 lg:justify-start lg:gap-4">
             <a
               href="#"
               className="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-brand-blue px-3 py-2.5 text-[12px] font-bold text-white transition-opacity hover:opacity-90 lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem] lg:font-semibold"
@@ -137,7 +137,7 @@ function Hero() {
             </a>
             <a
               href="#"
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md border border-white/50 px-3 py-2.5 text-[12px] font-bold text-white transition-colors hover:bg-white/10 lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem] lg:font-semibold"
+              className="hidden items-center gap-2 whitespace-nowrap rounded-md border border-white/50 px-3 py-2.5 text-[12px] font-bold text-white transition-colors hover:bg-white/10 lg:inline-flex lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem] lg:font-semibold"
             >
               View Projects <ArrowRight className="h-3.5 w-3.5 lg:h-5 lg:w-5" />
             </a>
