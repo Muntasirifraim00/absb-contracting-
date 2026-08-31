@@ -102,8 +102,8 @@ function Hero() {
             >
               <Phone className="h-3.5 w-3.5 shrink-0 fill-brand-green text-brand-green lg:h-5 lg:w-5" />
               <span className="leading-tight text-white">
-                <span className="block text-[10px] lg:text-[15px]">Call Now</span>
-                <span className="block whitespace-nowrap text-[10px] font-medium lg:text-[15px]">+971 55 409 7614</span>
+                <span className="block text-[10px] font-bold lg:text-[15px] lg:font-normal">Call Now</span>
+                <span className="block whitespace-nowrap text-[10px] font-bold lg:text-[15px] lg:font-medium">+971 55 409 7614</span>
               </span>
             </a>
             <button aria-label="Open menu" className="shrink-0 p-1 text-white">
@@ -114,16 +114,16 @@ function Hero() {
 
         {/* Hero copy */}
         <div className="mx-auto w-full max-w-[1600px] px-4 pt-6 lg:px-8 lg:pt-10">
-          <p className="whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.02em] text-brand-green lg:text-base">
+          <p className="whitespace-nowrap text-center text-[10px] font-bold uppercase tracking-[0.02em] text-brand-green lg:text-left lg:text-base lg:font-semibold">
             Engineering certainty. Built into every detail.
           </p>
-          <span className="mt-2 block h-[3px] w-12 bg-brand-green lg:mt-3 lg:w-16" />
+          <span className="mx-auto mt-2 block h-[3px] w-12 bg-brand-green lg:mx-0 lg:mt-3 lg:w-16" />
 
-          <h1 className="mt-4 max-w-[9ch] text-[2.4rem] font-bold leading-[1.06] tracking-[-0.02em] text-white sm:text-5xl lg:mt-6 lg:text-[4.35rem]">
+          <h1 className="mx-auto mt-4 max-w-[9ch] text-center text-[2.4rem] font-extrabold leading-[1.06] tracking-[-0.02em] text-white sm:text-5xl lg:mx-0 lg:mt-6 lg:text-left lg:text-[4.35rem] lg:font-bold">
             Engineering Precision. Built for <span className="text-brand-green">Certainty.</span>
           </h1>
 
-          <p className="mt-4 max-w-[32ch] text-[0.82rem] leading-[1.5] text-white/85 lg:mt-6 lg:max-w-[30ch] lg:text-xl">
+          <p className="mx-auto mt-4 max-w-[32ch] text-center text-[0.82rem] font-bold leading-[1.5] text-white/85 lg:mx-0 lg:mt-6 lg:max-w-[30ch] lg:text-left lg:text-xl lg:font-normal">
             G+1 turnkey villas, premium fit-outs and optimized MEP systems, delivered with engineering control across
             every critical stage.
           </p>
@@ -131,13 +131,13 @@ function Hero() {
           <div className="mt-5 flex items-center gap-2.5 lg:mt-9 lg:gap-4">
             <a
               href="#"
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-brand-blue px-3 py-2.5 text-[12px] font-semibold text-white transition-opacity hover:opacity-90 lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem]"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-brand-blue px-3 py-2.5 text-[12px] font-bold text-white transition-opacity hover:opacity-90 lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem] lg:font-semibold"
             >
               Start Your Project <ArrowRight className="h-3.5 w-3.5 lg:h-5 lg:w-5" />
             </a>
             <a
               href="#"
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md border border-white/50 px-3 py-2.5 text-[12px] font-semibold text-white transition-colors hover:bg-white/10 lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem]"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md border border-white/50 px-3 py-2.5 text-[12px] font-bold text-white transition-colors hover:bg-white/10 lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem] lg:font-semibold"
             >
               View Projects <ArrowRight className="h-3.5 w-3.5 lg:h-5 lg:w-5" />
             </a>
@@ -163,7 +163,7 @@ function Hero() {
             </div>
           </div>
 
-          <div className="mt-3 flex items-center justify-center gap-3 whitespace-nowrap text-[11px] text-white lg:hidden">
+          <div className="mt-3 flex items-center justify-center gap-3 whitespace-nowrap text-[11px] font-bold text-white lg:hidden">
             <span className="flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full bg-brand-green" />
               Engineering Team Online
@@ -196,11 +196,11 @@ function Stat({
       <div className="flex flex-col items-center gap-0.5 lg:flex-row lg:justify-center lg:gap-4">
         <span className="shrink-0">{icon}</span>
         <div>
-          <p className="text-[1.15rem] font-bold leading-tight text-white lg:text-4xl">{value}</p>
-          <p className="text-[9px] font-semibold tracking-wide text-brand-green lg:text-base">{label}</p>
+          <p className="text-[1.15rem] font-extrabold leading-tight text-white lg:text-4xl lg:font-bold">{value}</p>
+          <p className="text-[9px] font-bold tracking-wide text-brand-green lg:text-base lg:font-semibold">{label}</p>
         </div>
       </div>
-      <p className="mt-1 text-[8.5px] leading-tight text-white/85 lg:text-[15px]">{note}</p>
+      <p className="mt-1 text-[8.5px] font-bold leading-tight text-white/85 lg:text-[15px] lg:font-normal">{note}</p>
     </div>
   );
 }
