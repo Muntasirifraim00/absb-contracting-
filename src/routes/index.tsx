@@ -23,6 +23,8 @@ import logo from "@/assets/absb-logo.png.asset.json";
 import { Advantage } from "@/components/sections/Advantage";
 import { Precision } from "@/components/sections/Precision";
 import { Financial } from "@/components/sections/Financial";
+import { VisualIntegrity } from "@/components/sections/VisualIntegrity";
+import { PixelPerfect } from "@/components/sections/PixelPerfect";
 
 
 export const Route = createFileRoute("/")({
@@ -54,6 +56,8 @@ function Index() {
       <Advantage />
       <Precision />
       <Financial />
+      <VisualIntegrity />
+      <PixelPerfect />
     </main>
   );
 }
