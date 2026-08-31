@@ -66,3 +66,19 @@ export function useCountUp(target: number, active: boolean, duration = 1400) {
 
   return value;
 }
+
+/** Tracks the visitor's reduced-motion preference, updating if it changes. */
+export function useReducedMotion() {
+  const [reduced, setReduced] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || typeof window.matchMedia !== "function") return;
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduced(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  return reduced;
+}

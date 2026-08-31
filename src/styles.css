@@ -80,6 +80,8 @@
   --animate-marquee: marquee 26s linear infinite;
   --animate-sheen: sheen 1.15s ease-out;
   --animate-grid-drift: grid-drift 28s linear infinite;
+  --animate-progress: progress 6s linear forwards;
+  --animate-float: float 9s ease-in-out infinite;
 
   @keyframes scan-y {
     0% {
@@ -131,6 +133,25 @@
     }
     to {
       transform: translateX(420%) rotate(12deg);
+    }
+  }
+
+  @keyframes progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
     }
   }
 
