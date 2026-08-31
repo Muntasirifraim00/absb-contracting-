@@ -20,6 +20,10 @@ import {
 import heroDesktop from "@/assets/hero-desktop.png.asset.json";
 import heroMobile from "@/assets/hero-mobile.png.asset.json";
 import logo from "@/assets/absb-logo.png.asset.json";
+import { Advantage } from "@/components/sections/Advantage";
+import { Precision } from "@/components/sections/Precision";
+import { Financial } from "@/components/sections/Financial";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,9 +51,13 @@ function Index() {
     <main className="font-display bg-navy-deep">
       <Hero />
       <Results />
+      <Advantage />
+      <Precision />
+      <Financial />
     </main>
   );
 }
+
 
 function Hero() {
   return (
