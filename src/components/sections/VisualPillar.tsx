@@ -17,12 +17,7 @@ export function CardMedia({
         className,
       )}
     >
-      <img
-        src={image.url}
-        alt={alt}
-        className="h-full w-full object-cover opacity-90 mix-blend-screen"
-        style={{ filter: "invert(1) hue-rotate(180deg)" }}
-      />
+      <img src={image.url} alt={alt} loading="lazy" className="h-full w-full object-cover" />
     </div>
   );
 }
