@@ -117,31 +117,31 @@ function Hero() {
         </header>
 
         {/* Hero copy */}
-        <div className="mx-auto w-full max-w-[1600px] px-4 pt-6 lg:px-8 lg:pt-10">
+        <div className="mx-auto w-full max-w-[1600px] px-4 pt-6 lg:px-8 lg:pt-6">
           <p className="whitespace-nowrap text-center text-[10px] font-bold uppercase tracking-[0.02em] text-brand-green lg:text-left lg:text-base lg:font-semibold">
             Engineering certainty. Built into every detail.
           </p>
           <span className="mx-auto mt-2 block h-[3px] w-12 bg-brand-green lg:mx-0 lg:mt-3 lg:w-16" />
 
-          <h1 className="mx-auto mt-4 max-w-[9ch] text-center text-[2.4rem] font-extrabold leading-[1.06] tracking-[-0.02em] text-white sm:text-5xl lg:mx-0 lg:mt-6 lg:text-left lg:text-[4.35rem] lg:font-bold">
+          <h1 className="mx-auto mt-4 max-w-[9ch] text-center text-[2.4rem] font-extrabold leading-[1.06] tracking-[-0.02em] text-white sm:text-5xl lg:mx-0 lg:mt-6 lg:text-left lg:text-[3.6rem] lg:font-bold">
             Engineering Precision. Built for <span className="text-brand-green">Certainty.</span>
           </h1>
 
-          <p className="mx-auto mt-4 max-w-[32ch] text-center text-[0.82rem] font-bold leading-[1.5] text-white/85 lg:mx-0 lg:mt-6 lg:max-w-[30ch] lg:text-left lg:text-xl lg:font-normal">
+          <p className="mx-auto mt-4 max-w-[32ch] text-center text-[0.82rem] font-bold leading-[1.5] text-white/85 lg:mx-0 lg:mt-4 lg:max-w-[30ch] lg:text-left lg:text-lg lg:font-normal">
             G+1 turnkey villas, premium fit-outs and optimized MEP systems, delivered with engineering control across
             every critical stage.
           </p>
 
-          <div className="mt-5 flex items-center justify-center gap-2.5 lg:mt-9 lg:justify-start lg:gap-4">
+          <div className="mt-5 flex items-center justify-center gap-2.5 lg:mt-6 lg:justify-start lg:gap-4">
             <a
               href="#"
-              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-brand-blue px-3 py-2.5 text-[12px] font-bold text-white transition-opacity hover:opacity-90 lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem] lg:font-semibold"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-brand-blue px-3 py-2.5 text-[12px] font-bold text-white transition-opacity hover:opacity-90 lg:gap-4 lg:px-6 lg:py-3 lg:text-[1.05rem] lg:font-semibold"
             >
               Start Your Project <ArrowRight className="h-3.5 w-3.5 lg:h-5 lg:w-5" />
             </a>
             <a
               href="#"
-              className="hidden items-center gap-2 whitespace-nowrap rounded-md border border-white/50 px-3 py-2.5 text-[12px] font-bold text-white transition-colors hover:bg-white/10 lg:inline-flex lg:gap-4 lg:px-7 lg:py-4 lg:text-[1.05rem] lg:font-semibold"
+              className="hidden items-center gap-2 whitespace-nowrap rounded-md border border-white/50 px-3 py-2.5 text-[12px] font-bold text-white transition-colors hover:bg-white/10 lg:inline-flex lg:gap-4 lg:px-6 lg:py-3 lg:text-[1.05rem] lg:font-semibold"
             >
               View Projects <ArrowRight className="h-3.5 w-3.5 lg:h-5 lg:w-5" />
             </a>
@@ -149,7 +149,7 @@ function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="mt-auto px-4 pb-4 lg:px-8 lg:pb-7">
+        <div className="mt-auto px-4 pb-4 lg:px-8 lg:pb-5">
           <div className="mx-auto w-full max-w-[1600px] rounded-xl border border-white/15 bg-navy-deep/70 backdrop-blur-sm">
             <div className="grid grid-cols-3 divide-x divide-white/15 lg:grid-cols-4">
               <Stat icon={<Building2 className="h-5 w-5 text-brand-blue lg:h-8 lg:w-8" strokeWidth={2} />} value="150+" label="PROJECTS" note="Successfully Delivered" />
@@ -196,7 +196,7 @@ function Stat({
   note: string;
 }) {
   return (
-    <div className="px-1.5 py-3 text-center lg:px-6 lg:py-7">
+    <div className="px-1.5 py-3 text-center lg:px-6 lg:py-5">
       <div className="flex flex-col items-center gap-0.5 lg:flex-row lg:justify-center lg:gap-4">
         <span className="shrink-0">{icon}</span>
         <div>
