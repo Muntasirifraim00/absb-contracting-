@@ -6,6 +6,11 @@ import detailsThatMatter from "@/assets/details-that-matter.webp.asset.json";
 import consistentAppearance from "@/assets/consistent-appearance.png.asset.json";
 import builtToImpress from "@/assets/built-to-impress.png.asset.json";
 import goodIsCommon from "@/assets/good-is-common.png.asset.json";
+import drawingToReality from "@/assets/drawing-to-reality.png.asset.json";
+import qualityAtEveryStep from "@/assets/quality-at-every-step.png.asset.json";
+import documentedTraceable from "@/assets/documented-traceable.png.asset.json";
+import engineeredSupervision from "@/assets/engineered-supervision.png.asset.json";
+import zeroDeviation from "@/assets/zero-deviation-zero-compromise.png.asset.json";
 
 export type ImageAsset = { url: string };
 
@@ -28,4 +33,9 @@ export const sectionImages = {
   consistentAppearance,
   builtToImpress,
   goodIsCommon,
+  drawingToReality,
+  qualityAtEveryStep,
+  documentedTraceable,
+  engineeredSupervision,
+  zeroDeviation,
 } satisfies Record<string, ImageAsset>;

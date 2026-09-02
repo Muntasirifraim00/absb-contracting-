@@ -1,6 +1,6 @@
 import { ArrowRight, ClipboardCheck, Crosshair, HardHat, ShieldCheck } from "lucide-react";
 import { CardMedia, PillarCard } from "@/components/sections/VisualPillar";
-import { placeholderImage, type Pillar } from "@/lib/section-images";
+import { sectionImages, type Pillar } from "@/lib/section-images";
 
 const ITEMS: Pillar[] = [
   {
@@ -8,32 +8,32 @@ const ITEMS: Pillar[] = [
     title: "Drawing to reality",
     sub: "100% follow-through",
     note: "Approved drawings. No deviation.",
-    image: placeholderImage,
-    alt: "Blueprint wireframe resolving into the finished villa",
+    image: sectionImages.drawingToReality,
+    alt: "Villa half under construction, half completed and lit at dusk",
   },
   {
     icon: ShieldCheck,
     title: "Quality at every step",
     sub: "Multi-stage checks",
     note: "Every stage is inspected, verified and documented.",
-    image: placeholderImage,
-    alt: "Site survey instrument checking a concrete structure",
+    image: sectionImages.qualityAtEveryStep,
+    alt: "ABSB engineers reviewing drawings in front of an active structure",
   },
   {
     icon: ClipboardCheck,
     title: "Documented & traceable",
     sub: "Complete transparency",
     note: "Reports, inspections and photos for full clarity.",
-    image: placeholderImage,
-    alt: "Inspection checklist on a clipboard beside a safety helmet",
+    image: sectionImages.documentedTraceable,
+    alt: "Site inspection report on a clipboard beside an ABSB safety helmet",
   },
   {
     icon: HardHat,
     title: "Engineered supervision",
     sub: "Experts on site",
     note: "Zero deviation, every single day.",
-    image: placeholderImage,
-    alt: "ABSB engineers reviewing drawings on an active site",
+    image: sectionImages.engineeredSupervision,
+    alt: "ABSB engineers using a total station and tablet on site",
   },
 ];
 
@@ -85,8 +85,8 @@ export function VisualIntegrity() {
               </p>
             </div>
             <CardMedia
-              image={placeholderImage}
-              alt="Completed villa measured against its blueprint"
+              image={sectionImages.zeroDeviation}
+              alt="Completed modern villa lit at dusk"
               className="h-[190px] w-full lg:h-[320px]"
             />
           </div>
