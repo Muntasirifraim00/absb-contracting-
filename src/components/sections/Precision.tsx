@@ -1,5 +1,5 @@
 import { ArrowRight, Check, Crosshair, Ruler, ShieldCheck, Timer } from "lucide-react";
-import blueprint from "@/assets/blueprint-villa.png.asset.json";
+import deviationAllowed from "@/assets/deviation-allowed.png.asset.json";
 import { useCountUp, useReveal } from "@/hooks/use-reveal";
 import { cn } from "@/lib/utils";
 
