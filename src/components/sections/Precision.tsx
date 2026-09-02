@@ -186,10 +186,9 @@ function Console() {
 
       <div className="relative mt-2.5 overflow-hidden rounded-xl border border-brand-blue/25 bg-navy-deep lg:mt-4">
         <img
-          src={blueprint.url}
-          alt="Blueprint wireframe of a G+1 villa"
-          className="h-[190px] w-full object-contain opacity-90 mix-blend-screen lg:h-[300px]"
-          style={{ filter: "invert(1) hue-rotate(180deg)" }}
+          src={deviationAllowed.url}
+          alt="Surveyor checking villa alignment with a total station at dusk"
+          className="h-[190px] w-full object-cover lg:h-[300px]"
         />
 
         {/* Scanning beam */}

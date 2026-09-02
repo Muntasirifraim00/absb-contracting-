@@ -1,6 +1,6 @@
 import { ArrowRight, Award, Crosshair, Eye, Grid2x2, Search, ShieldCheck } from "lucide-react";
 import { CardMedia, PillarCard } from "@/components/sections/VisualPillar";
-import { placeholderImage, type Pillar } from "@/lib/section-images";
+import { sectionImages, type Pillar } from "@/lib/section-images";
 
 const ITEMS: Pillar[] = [
   {
@@ -8,7 +8,7 @@ const ITEMS: Pillar[] = [
     title: "Precise alignment",
     sub: "Every line. Every angle.",
     note: "Perfect alignment in every element for a clean, balanced finish.",
-    image: placeholderImage,
+    image: sectionImages.preciseAlignment,
     alt: "Villa facade with alignment guides overlaid",
   },
   {
@@ -16,7 +16,7 @@ const ITEMS: Pillar[] = [
     title: "Flawless finish",
     sub: "Smooth. Sharp. Sophisticated.",
     note: "High-quality materials and expert execution for a seamless, pixel-perfect finish.",
-    image: placeholderImage,
+    image: sectionImages.flawlessFinish,
     alt: "Close-up of a precisely jointed cladding panel",
   },
   {
@@ -24,7 +24,7 @@ const ITEMS: Pillar[] = [
     title: "Details that matter",
     sub: "We don’t overlook anything.",
     note: "Every joint, edge and corner is crafted with precision and care.",
-    image: placeholderImage,
+    image: sectionImages.detailsThatMatter,
     alt: "Sharp corner detail between wall and ceiling trim",
   },
   {
@@ -32,7 +32,7 @@ const ITEMS: Pillar[] = [
     title: "Consistent appearance",
     sub: "Beautiful today. Timeless tomorrow.",
     note: "A consistent look that maintains its beauty for years to come.",
-    image: placeholderImage,
+    image: sectionImages.consistentAppearance,
     alt: "Villa exterior lit at dusk",
   },
   {
@@ -40,7 +40,7 @@ const ITEMS: Pillar[] = [
     title: "Built to impress",
     sub: "Quality you can see.",
     note: "Visual excellence that enhances value, builds trust and leaves a lasting impression.",
-    image: placeholderImage,
+    image: sectionImages.builtToImpress,
     alt: "Illuminated villa entrance with premium finishes",
   },
 ];
@@ -95,7 +95,7 @@ export function PixelPerfect() {
                 </div>
               </div>
               <CardMedia
-                image={placeholderImage}
+                image={sectionImages.goodIsCommon}
                 alt="Blueprint wireframe of the villa"
                 className="h-[190px] w-full lg:h-[200px]"
               />
