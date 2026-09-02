@@ -85,8 +85,8 @@ export function VisualIntegrity() {
               </p>
             </div>
             <CardMedia
-              image={placeholderImage}
-              alt="Completed villa measured against its blueprint"
+              image={sectionImages.zeroDeviation}
+              alt="Completed modern villa lit at dusk"
               className="h-[190px] w-full lg:h-[320px]"
             />
           </div>
