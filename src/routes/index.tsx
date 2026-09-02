@@ -65,7 +65,7 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative h-[100svh] w-full overflow-hidden bg-navy-deep">
+    <section className="relative min-h-[100svh] w-full overflow-hidden bg-navy-deep">
       <img
         src={heroMobile.url}
         alt="Completed modern villa at dusk beside an active construction site"
@@ -79,7 +79,7 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy-deep/70 to-transparent lg:hidden" />
       <div className="absolute inset-0 hidden lg:block bg-[linear-gradient(90deg,var(--navy-deep)_0%,color-mix(in_oklab,var(--navy-deep)_92%,transparent)_28%,color-mix(in_oklab,var(--navy-deep)_35%,transparent)_50%,transparent_72%)]" />
 
-      <div className="relative flex h-full flex-col">
+      <div className="relative flex min-h-[100svh] flex-col">
         {/* Header */}
         <header className="mx-auto grid w-full max-w-[1600px] grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 pt-4 lg:flex lg:justify-between lg:gap-4 lg:px-8 lg:pt-5">
           <div className="flex min-w-0 items-center gap-3 lg:gap-4">
