@@ -69,15 +69,15 @@ function Hero() {
       <img
         src={heroMobile.url}
         alt="Completed modern villa at dusk beside an active construction site"
-        className="absolute inset-0 h-full w-full object-cover object-bottom lg:hidden"
+        className="absolute inset-0 h-full w-full object-cover object-bottom brightness-110 contrast-105 lg:hidden"
       />
       <img
         src={heroDesktop.url}
         alt="Completed modern villa at dusk beside an active construction site"
-        className="absolute inset-0 hidden h-full w-full object-cover lg:block"
+        className="absolute inset-0 hidden h-full w-full object-cover brightness-110 contrast-105 lg:block"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy-deep/70 to-transparent lg:hidden" />
-      <div className="absolute inset-0 hidden lg:block bg-[linear-gradient(90deg,var(--navy-deep)_0%,color-mix(in_oklab,var(--navy-deep)_92%,transparent)_28%,color-mix(in_oklab,var(--navy-deep)_35%,transparent)_50%,transparent_72%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/90 via-navy-deep/45 to-transparent lg:hidden" />
+      <div className="absolute inset-0 hidden lg:block bg-[linear-gradient(90deg,color-mix(in_oklab,var(--navy-deep)_75%,transparent)_0%,color-mix(in_oklab,var(--navy-deep)_70%,transparent)_22%,color-mix(in_oklab,var(--navy-deep)_30%,transparent)_48%,transparent_72%)]" />
 
       <div className="relative flex min-h-[100svh] flex-col">
         {/* Header */}
