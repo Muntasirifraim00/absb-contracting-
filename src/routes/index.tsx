@@ -53,11 +53,11 @@ function Index() {
     <main className="font-display bg-navy-deep">
       <Hero />
       <Results />
+      <PixelPerfect />
       <Advantage />
       <Precision />
       <Financial />
       <VisualIntegrity />
-      <PixelPerfect />
     </main>
   );
 }
